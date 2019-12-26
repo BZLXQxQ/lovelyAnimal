@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>萌物世界</title>
+		<link rel="stylesheet" href="css/cat.css" />
+		<script src="js/jquery-1.9.1.min.js" charset="utf-8"></script>
+		<script src="js/jquery.magnific-popup.min.js.js" charset="utf-8"></script>
+		<link href="css/magnific-popup.min.css" rel="stylesheet" />
+		<link rel="shortcut icon" type="image/x-icon" href="img/logo/logo.ico" />
+	</head>
+	<body>
+		<div id="header">
+			<ul>
+				<li><a href="index.html" title="首页">萌物世界</a></li>
+				<li><a href="cat.html" title="🐱">猫</a></li>
+				<li><a href="dog.html" title="🐕">狗</a></li>
+				<li><a href="rabbit.html" title="🐇">兔子</a></li>
+				<li><a href="ailurusFulgens.html" title="🐻">小熊猫</a></li>
+				<li><a href="Cricetinae.html" title="🐹">仓鼠</a></li>
+				<li><a href="arcticFox.html" title="🦊">北极狐</a></li>
+				<li><a href="bird.html" title="🐦">鸟</a></li>
+				<li><a href="penguin.html" title="🐧">企鹅</a></li>
+				<li><a href="login.html" title="登录">登录</a></li>
+			</ul>
+		</div>
+		<div id="bodyer1" class="container">
+			<div class="card">
+				<div class="imgBx">
+					<img class="lazy" src="img/i3.jpg">
+				</div>
+				<div class="contentBx">
+					<div class="content">
+						<h2>ฅ猫ฅ</h2>
+						<p>等南方的雨停了我就去找你，到时你要晒着太阳等着我,养一只沉默而且和你同样孤独的猫，你与它都不说话。</p>
+						<p>有生之年，欣喜相逢。</p>
+						<a href="#bodyer2">查看更多</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<audio id="bgAudio" autoplay="autoplay" preload="auto" loop="-1">
+			  <source src="music/m4.mp3" type="audio/mp3" />
+			</audio>
+		</div>
+		<script src="js/js_1.js" charset="utf-8"></script>
+		<script>document.getElementById("bgAudio").volume = 0.5;</script>
+		<div id="bodyer2" class="gallery-section">
+			<div class="inner-width">
+				<h1>Cat</h1>
+				<div class="border"></div>
+				<div class="gallery">
+					<a href="img/cat/c1.jpg" class="image">
+						<img src="img/cat/c1.jpg" alt="" />
+					</a>
+					<a href="img/cat/c2.jpg" class="image">
+						<img src="img/cat/c2.jpg" alt="" />
+					</a>
+					<a href="img/cat/c3.jpg" class="image">
+						<img src="img/cat/c3.jpg" alt="" />
+					</a>
+				</div>
+				<div class="gallery">
+					<a href="img/cat/c4.jpg" class="image">
+						<img src="img/cat/c4.jpg" alt="" />
+					</a>
+					<a href="img/cat/c5.jpg" class="image">
+						<img src="img/cat/c5.jpg" alt="" />
+					</a>
+					<a href="img/cat/c6.jpg" class="image">
+						<img src="img/cat/c6.jpg" alt="" />
+					</a>
+				</div>
+				<div class="gallery">
+					<a href="img/cat/c7.jpg" class="image">
+						<img src="img/cat/c7.jpg" alt="" />
+					</a>
+					<a href="img/cat/c8.jpg" class="image">
+						<img src="img/cat/c8.jpg" alt="" />
+					</a>
+					<a href="img/cat/c9.png" class="image">
+						<img src="img/cat/c9.png" alt="" />
+					</a>
+				</div>
+				<div class="gallery">
+					<a href="img/cat/c10.jpg" class="image">
+						<img src="img/cat/c10.jpg" alt="" />
+					</a>
+					<a href="img/cat/c11.jpg" class="image">
+						<img src="img/cat/c11.jpg" alt="" />
+					</a>
+					<a href="img/cat/c12.jpg" class="image">
+						<img src="img/cat/c12.jpg" alt="" />
+					</a>
+				</div>				
+			</div>
+		</div>
+		<div class="gallery-section">
+			<div class="inner-width">
+				<div class="border"></div>
+				<h1>End</h1>
+				<div class="border"></div>
+			</div>
+		</div>
+		<script>
+			$('.gallery').magnificPopup({
+				delegate: 'a',
+				type: 'image',
+				gallery: {
+					enabled: true
+				}
+			})
+		</script>
+		<div id="footer">
+			<a href="index.html" title="萌物世界"><p>©2019 萌物世界 Made by lckingz</p></a>
+			<div id="divBottom"></div>
+			<script type="text/javascript">
+			function date()
+			{
+			  var date=new Date();
+			  var year=date.getFullYear();
+			  var month=date.getMonth()+1;
+			  var day=date.getDate();
+			  var hour="00"+date.getHours();
+			    hour=hour.substr(hour.length-2);
+			  var minute="00"+date.getMinutes();
+			    minute=minute.substr(minute.length-2);
+			  var second="00"+date.getSeconds();
+			    second=second.substr(second.length-2);
+			  var week=date.getDay();
+			  switch(week)
+			  {
+			    case 1:week="星期一 ";break;
+			    case 2:week="星期二 ";break;
+			    case 3:week="星期三 ";break;
+			    case 4:week="星期四 ";break;
+			    case 5:week="星期五 ";break;
+			    case 6:week="星期六 ";break;
+			    case 0:week="星期日 ";break;
+			    default:week="";break;
+			  }
+			  document.getElementById("divBottom").innerHTML=year+"年"+month+"月"+day+"日"+" "+hour+":"+minute+":"+second+" "+week;
+			}
+			setInterval("date()",1000);
+			</script>
+		</div>
+	</body>
+</html>

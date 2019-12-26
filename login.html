@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/login.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="img/logo/logo.ico" />
+		<title>萌物世界</title>
+	</head>
+	<body>
+		<div class="box">
+			<h1>登录</h1>
+			<form>
+				<input type="email" id="mail" name="mail" placeholder="请输入你的邮箱地址">
+				<button class="submit">提交</button>
+				<a class="submit" href="index.html">退出</a>
+			</form>
+		</div>
+		<script>
+				var email = document.getElementById("mail");
+				email.addEventListener("input", function (event) {
+				  if (email.validity.typeMismatch) {
+				    email.setCustomValidity("请输入正确格式！");
+				  } else {
+					  email.setCustomValidity("验证成功！请退出！");
+				  }
+				});
+		</script>
+	</body>
+</html>

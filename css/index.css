@@ -1,0 +1,102 @@
+html{
+	min-height: 100%;
+}
+body{
+	font-family: helvetica,sans-serif;
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+	line-height: 1.6;
+    background-image: -webkit-linear-gradient(125deg,#fef9d7, #d299c2,#a8edea); 
+    background-image: -o-linear-gradient(125deg,#fef9d7, #d299c2,#a8edea); 
+    background-image: -moz-linear-gradient(125deg,#fef9d7, #d299c2,#a8edea); 
+    background-image: linear-gradient(125deg,#fef9d7, #d299c2,#a8edea); 
+    background-color: #393D49;
+	color: rgb(255,254,249);
+	animation: gradientChange 10s infinite;
+	background-size: 300%;
+}
+@keyframes gradientChange{
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+    100%{
+        background-position: 0% 50%;
+    }
+}
+div{
+	display: block;
+}
+.pageBackgroud{
+	text-align: center;
+	margin:auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+}
+.btom{
+	padding-bottom: 50px;
+}
+.btom h1{
+	text-shadow: 0 0 7px rgba(0,0,0,.4);
+	font-weight: 900;
+	font-size: 40px;
+}
+.btom h2{
+	text-shadow: 0 0 7px rgba(0,0,0,.4);
+}
+.btn{
+	margin-top: 30px;
+	border: 2px white solid;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+	color: rgb(255,254,249);
+	text-shadow: 0 1px 1px rgba(0,0,0,.4),0 1px 2px rgba(0,0,0,.2);
+}
+.btn:hover{
+	background-color: rgba(255,255,255,0.4);
+}
+a{
+	text-decoration: none;
+}
+.font_anim{
+	text-shadow: 0 0 7px rgba(0,0,0,.4);
+	-webkit-animation-duration:3s;
+	animation-duration:3s;
+	-webkit-animation-fill-mode:both;
+	animation-fill-mode:both;
+	-webkit-animation-name:font_anim_upbit;
+	animation-name:font_anim_upbit;
+}
+@-webkit-keyframes font_anim_upbit{
+		from{
+			-webkit-transform:translate3d(0,120px,0);
+			opacity:.3;
+			}
+		to{
+			-webkit-transform:translate3d(0,0,0);
+			opacity:1;
+		}
+}
+.bgm{
+	margin-top: 110px;
+	-webkit-animation-duration:3s;
+	animation-duration:3s;
+	-webkit-animation-fill-mode:both;
+	animation-fill-mode:both;
+	-webkit-animation-name:fadein;
+	animation-name:fadein;
+}
+@keyframes fadein{
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:6;
+		}
+}
